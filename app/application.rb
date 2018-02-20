@@ -45,7 +45,7 @@ class Application
       @@cart<<add_term
       return "added #{add_term}"
     else
-      return "Item #{add_term} not found, could not add to cart."
+      return "We don't have that item"
     end
   end
 end
