@@ -20,7 +20,7 @@ class Application
       end
     elsif req.path.match(/add/)
       add_term = req.params["item"]
-      resp.write 
+      resp.write handle_cart_add(add_term)
     else
       resp.write "Path Not Found"
     end
